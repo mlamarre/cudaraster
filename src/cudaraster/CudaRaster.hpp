@@ -59,7 +59,7 @@ public:
         DebugParams(void)
         {
             emulateTriangleSetup    = false;
-            emulateBinRaster        = false;
+            emulateBinRaster        = true;
             emulateCoarseRaster     = false;
             emulateFineRaster       = false;
         }
