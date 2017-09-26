@@ -372,7 +372,6 @@ FW_DLL_DECLARE_VOID(void,       APIENTRY,   glTexRenderbufferNV,                
 FW_DLL_DECLARE_VOID(void,       APIENTRY,   glRenderbufferStorageMultisampleCoverageNV,(GLenum target, GLsizei coverageSamples, GLsizei colorSamples, GLenum internalformat, GLsizei width, GLsizei height), (target, coverageSamples, colorSamples, internalformat, width, height))
 FW_DLL_DECLARE_VOID(void,       APIENTRY,   glGetRenderbufferParameterivEXT,        (GLenum target, GLenum pname, GLint* params), (target, pname, params))
 
-#endif
 
 //------------------------------------------------------------------------
 // GL_NV_path_rendering
@@ -431,8 +430,6 @@ FW_DLL_DECLARE_RETV(GLboolean,  APIENTRY,   glPointAlongPathNV,                 
 //------------------------------------------------------------------------
 // WGL
 //------------------------------------------------------------------------
-
-#if !FW_USE_GLEW
 
 FW_DLL_DECLARE_RETV(BOOL,       WINAPI,     wglChoosePixelFormatARB,                (HDC hdc, const int* piAttribIList, const FLOAT* pfAttribFList, UINT nMaxFormats, int* piFormats, UINT* nNumFormats), (hdc, piAttribIList, pfAttribFList, nMaxFormats, piFormats, nNumFormats))
 FW_DLL_DECLARE_RETV(BOOL,       WINAPI,     wglSwapIntervalEXT,                     (int interval), (interval))

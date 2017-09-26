@@ -1,1 +1,9 @@
 cudacache
+build
+x64
+.vscode
+*.user
+*.VC.db
+*.VC.VC.opendb
+.vs
+state_crsample_001.dat

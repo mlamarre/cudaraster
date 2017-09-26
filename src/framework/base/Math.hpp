@@ -39,7 +39,7 @@ FW_CUDA_FUNC F64    sqrt            (F64 a)         { return ::sqrt(a); }
 FW_CUDA_FUNC S32    abs             (S32 a)         { return (a >= 0) ? a : -a; }
 FW_CUDA_FUNC S64    abs             (S64 a)         { return (a >= 0) ? a : -a; }
 FW_CUDA_FUNC F32    abs             (F32 a)         { return ::fabsf(a); }
-FW_CUDA_FUNC F64    abs             (F64 a)         { return ::abs(a); }
+FW_CUDA_FUNC F64    abs             (F64 a)         { return ::fabs(a); }
 FW_CUDA_FUNC F64    pow             (F64 a, F64 b)  { return ::pow(a, b); }
 FW_CUDA_FUNC F64    exp             (F64 a)         { return ::exp(a); }
 FW_CUDA_FUNC F64    log             (F64 a)         { return ::log(a); }
@@ -68,7 +68,7 @@ FW_CUDA_FUNC F32    exp2            (F32 a)         { return ::exp2f(a); }
 FW_CUDA_FUNC F64    exp2            (F64 a)         { return ::exp2(a); }
 FW_CUDA_FUNC F32    log             (F32 a)         { return ::__logf(a); }
 FW_CUDA_FUNC F32    log2            (F32 a)         { return ::__log2f(a); }
-FW_CUDA_FUNC F64    log2            (F64 a)         { return ::log2(a); }
+FW_CUDA_FUNC F64    log2            (F64 a)         { return ::log2(a); } 
 FW_CUDA_FUNC F32    sin             (F32 a)         { return ::__sinf(a); }
 FW_CUDA_FUNC F32    cos             (F32 a)         { return ::__cosf(a); }
 FW_CUDA_FUNC F32    tan             (F32 a)         { return ::__tanf(a); }

@@ -31,7 +31,7 @@
 //------------------------------------------------------------------------
 
 #define FW_USE_CUDA 1
-#define FW_USE_GLEW 0
+#define FW_USE_GLEW 1
 
 //------------------------------------------------------------------------
 
@@ -130,8 +130,8 @@ typedef size_t          CUsize_t;
 #if (!FW_CUDA && FW_USE_GLEW)
 #   define GL_FUNC_AVAILABLE(NAME) (NAME != NULL)
 #   define GLEW_STATIC
-#   include "3rdparty/glew/include/GL/glew.h"
-#   include "3rdparty/glew/include/GL/wglew.h"
+#   include "glew/include/GL/glew.h"
+#   include "glew/include/GL/wglew.h"
 #   if FW_USE_CUDA
 #       include <cudaGL.h>
 #   endif
